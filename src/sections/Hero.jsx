@@ -21,11 +21,8 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collection
         </p>
-        <h1
-          data-aos="fade-up"
-          className="mt-10 z-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold"
-        >
-          <span className="xl:bg-white xl:text-black text-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 z-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+          <span className="xl:bg-white xl:text-black text-white xl:whitespace-nowrap relative  ">
             The New Arrival{" "}
           </span>{" "}
           <br />
@@ -59,7 +56,7 @@ const Hero = () => {
 
       {/* Image section */}
 
-      <div className="relative flex flex-1 flex-wrap justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center ">
+      <div className="relative -z-0 flex flex-1 flex-wrap justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center ">
         <img
           src={bigShoeImage}
           alt="shoe collection"

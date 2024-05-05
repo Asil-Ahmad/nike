@@ -6,7 +6,7 @@ import { navLinks } from "../constants";
 const Nav = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-8 absolute z-20 w-full">
       <nav
         data-aos="fade-down"
         className="flex justify-between items-center max-container"
@@ -40,11 +40,12 @@ const Nav = () => {
             alt="hamburger"
             width={25}
             height={25}
-            onClick={() => setOpen(true)}
+            onClick={() => 
+              setOpen(true)}
             className="invert"
           />
           {open && (
-            <ul className=" bg-[#e4d7d7] rounded-md p-4 w-[11rem]  absolute -right-[1rem] top-10">
+            <ul className=" bg-[#e4d7d7]  rounded-md p-4 w-[11rem]  absolute -right-[1rem] top-10">
               {navLinks.map((item) => (
                 <li key={item.label} className="">
                   <a
